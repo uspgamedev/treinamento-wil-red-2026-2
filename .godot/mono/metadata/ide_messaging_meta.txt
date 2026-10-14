@@ -1,2 +1,2 @@
-﻿50316
-C:/Users/jotav/Documents/Godot/Godot_v4.7.2-stable_mono_win64/Godot_v4.7.2-stable_mono_win64.exe
+﻿49336
+C:/Users/Groner/Programas/godot/Godot_v4.7.2-stable_mono_win64/Godot_v4.7.2-stable_mono_win64/Godot_v4.7.2-stable_mono_win64.exe

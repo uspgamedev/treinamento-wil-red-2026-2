@@ -76,6 +76,7 @@ public partial class Player : Area2D
         Position = position;
         Show();
         GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
+        SetProcess(true);
     }
 
     public void OnBodyEntered(PhysicsBody2D body)
@@ -84,5 +85,6 @@ public partial class Player : Area2D
         EmitSignal(SignalName.Hit);
         // Must be deferred as we can't change physics properties on a physics callback.
         GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
+        SetProcess(false);
     }
 }

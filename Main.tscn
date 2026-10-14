@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://km3p7l56sgtx" path="res://Mob.tscn" id="2_06wge"]
 [ext_resource type="PackedScene" uid="uid://chv7x63ne2hrq" path="res://Player.tscn" id="3_ouh2a"]
 [ext_resource type="PackedScene" uid="uid://cqppxmb7k5e0u" path="res://HUD.tscn" id="4_f8bkj"]
+[ext_resource type="PackedScene" uid="uid://b7jbgsr5jvwgv" path="res://Coin.tscn" id="4_lgr22"]
 [ext_resource type="AudioStream" uid="uid://dylgctjwaj8oc" path="res://art/House In a Forest Loop.ogg" id="5_dnvwy"]
 [ext_resource type="AudioStream" uid="uid://bfcm743iwwnn0" path="res://art/gameover.wav" id="5_r2snl"]
 
@@ -16,6 +17,7 @@ point_count = 5
 [node name="Main" type="Node" unique_id=1055941305]
 script = ExtResource("1_t4q5g")
 MobScene = ExtResource("2_06wge")
+CoinScene = ExtResource("4_lgr22")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1131724171]
 anchors_preset = 15
@@ -24,6 +26,10 @@ anchor_bottom = 1.0
 color = Color(0.219608, 0.372549, 0.380392, 1)
 
 [node name="Player" parent="." unique_id=760614831 instance=ExtResource("3_ouh2a")]
+
+[node name="Coin" parent="." unique_id=1779092063 instance=ExtResource("4_lgr22")]
+FlySpeed = null
+MagnetRadius = null
 
 [node name="MobTimer" type="Timer" parent="." unique_id=302842278]
 wait_time = 0.5
@@ -50,8 +56,12 @@ stream = ExtResource("5_dnvwy")
 [node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=693847821]
 stream = ExtResource("5_r2snl")
 
+[node name="CoinTimer" type="Timer" parent="." unique_id=1498366476]
+wait_time = 0.3
+
 [connection signal="Hit" from="Player" to="." method="GameOver"]
 [connection signal="timeout" from="MobTimer" to="." method="OnMobTimerTimeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="OnScoreTimerTimeout"]
 [connection signal="timeout" from="StartTimer" to="." method="OnStartTimerTimeout"]
 [connection signal="StartGame" from="HUD" to="." method="NewGame"]
+[connection signal="timeout" from="CoinTimer" to="." method="OnCoinSpawnTimerTimeout"]
