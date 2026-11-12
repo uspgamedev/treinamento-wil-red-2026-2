@@ -1,8 +1,11 @@
-res://HUD.cs
-res://Player.cs
-res://Mob.cs
+res://Player.tscn
+res://BulletScene.tscn
 res://Main.cs
-res://Node2d.cs
-res://Main.tscn
-res://Coin.tscn
+res://Player.cs
+res://AutoShooter.cs
+res://Bullet.cs
 res://Coin.cs
+res://HUD.cs
+res://Mob.cs
+res://Main.tscn
+res://Mob.tscn

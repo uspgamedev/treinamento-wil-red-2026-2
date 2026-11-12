@@ -6,14 +6,24 @@ public partial class Player : Area2D
     public delegate void HitEventHandler();
 
     [Export]
-    public int Speed { get; set; } = 400; // How fast the player will move (pixels/sec).
+    public int Speed { get; set; } = 400;
 
-    public Vector2 ScreenSize { get; set; } // Size of the game window.
+    public Rect2 PlayArea { get; private set; }
 
     public override void _Ready()
     {
-        ScreenSize = GetViewportRect().Size;
         Hide();
+    }
+
+    public void SetMapBounds(Rect2 mapRect, Rect2 playArea)
+    {
+        PlayArea = playArea;
+
+        var camera = GetNode<Camera2D>("Camera2D");
+        camera.LimitLeft = (int)mapRect.Position.X;
+        camera.LimitTop = (int)mapRect.Position.Y;
+        camera.LimitRight = (int)mapRect.End.X;
+        camera.LimitBottom = (int)mapRect.End.Y;
     }
 
     public override void _Process(double delta)
@@ -54,8 +64,8 @@ public partial class Player : Area2D
 
         Position += velocity * (float)delta;
         Position = new Vector2(
-            x: Mathf.Clamp(Position.X, 0, ScreenSize.X),
-            y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
+            x: Mathf.Clamp(Position.X, PlayArea.Position.X, PlayArea.End.X),
+            y: Mathf.Clamp(Position.Y, PlayArea.Position.Y, PlayArea.End.Y)
         );
 
         if (velocity.X != 0)
@@ -74,17 +84,20 @@ public partial class Player : Area2D
     public void Start(Vector2 position)
     {
         Position = position;
+        GetNode<Camera2D>("Camera2D").ResetSmoothing();
         Show();
         GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
         SetProcess(true);
+        GetNode<AutoShooter>("AutoShooter").Start();
     }
 
     public void OnBodyEntered(PhysicsBody2D body)
     {
-        Hide(); // Player disappears after being hit.
+        Hide();
         EmitSignal(SignalName.Hit);
         // Must be deferred as we can't change physics properties on a physics callback.
         GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
         SetProcess(false);
+        GetNode<AutoShooter>("AutoShooter").Stop();
     }
 }

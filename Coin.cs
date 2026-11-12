@@ -19,7 +19,6 @@ public partial class Coin : Area2D
 
     public override void _Process(double delta)
     {
-        // Se o player for nulo ou se ele morreu não faz nada
         if (!IsInstanceValid(_targetPlayer) || !_targetPlayer.Visible) return;
 
         float distance = Position.DistanceTo(_targetPlayer.Position);

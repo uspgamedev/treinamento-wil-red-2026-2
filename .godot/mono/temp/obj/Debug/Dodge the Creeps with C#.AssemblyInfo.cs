@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dodge the Creeps with C#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e677c20ecab8555227e524d5392220d2474107a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a11682990e4f4ea6defd0bb67ab013523a2b4570")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dodge the Creeps with C#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dodge the Creeps with C#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

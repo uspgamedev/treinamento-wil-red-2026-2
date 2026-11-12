@@ -88,26 +88,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Groner\\.nuget\\packages\\": {}
+    "C:\\Users\\pedro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Groner\\Documents\\gootproj\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
+      "projectUniqueName": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
       "projectName": "Dodge the Creeps with C#",
-      "projectPath": "C:\\Users\\Groner\\Documents\\gootproj\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
-      "packagesPath": "C:\\Users\\Groner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Groner\\Documents\\gootproj\\treinamento-wil-red-2026-2\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
+      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+      "outputPath": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Groner\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -165,15 +163,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.32, 8.0.32]"
+            "version": "[8.0.30, 8.0.30]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.32, 8.0.32]"
+            "version": "[8.0.30, 8.0.30]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.32, 8.0.32]"
+            "version": "[8.0.30, 8.0.30]"
           }
         ],
         "frameworkReferences": {
@@ -181,7 +179,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
