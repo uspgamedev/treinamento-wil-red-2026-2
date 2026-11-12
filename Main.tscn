@@ -18,7 +18,7 @@ CoinScene = ExtResource("4_lgr22")
 
 [node name="Map" type="Sprite2D" parent="." unique_id=533354946]
 texture_filter = 1
-scale = Vector2(2.5, 2.5)
+scale = Vector2(2, 2)
 texture = ExtResource("4_trn2v")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1131724171]

@@ -228,6 +228,7 @@ animation = &"left"
 frame_progress = 0.49718243
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=784013998]
+texture_filter = 3
 shape = SubResource("2")
 
 [node name="Trail" type="GPUParticles2D" parent="." unique_id=1998644180]
