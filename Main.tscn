@@ -6,8 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://cqppxmb7k5e0u" path="res://HUD.tscn" id="4_f8bkj"]
 [ext_resource type="PackedScene" uid="uid://b7jbgsr5jvwgv" path="res://Coin.tscn" id="4_lgr22"]
 [ext_resource type="Texture2D" uid="uid://cj17ye0ki4mv7" path="res://art/Mapa.png" id="4_trn2v"]
-[ext_resource type="AudioStream" uid="uid://dylgctjwaj8oc" path="res://art/House In a Forest Loop.ogg" id="5_dnvwy"]
-[ext_resource type="AudioStream" uid="uid://bfcm743iwwnn0" path="res://art/gameover.wav" id="5_r2snl"]
+[ext_resource type="AudioStream" uid="uid://bfcm743iwwnn0" path="res://art/Music/gameover.wav" id="5_r2snl"]
+[ext_resource type="AudioStream" uid="uid://oi0loky6oad5" path="res://art/Music/Musica gameplay.ogg" id="7_trn2v"]
+[ext_resource type="AudioStream" uid="uid://cg68mybp1hbqr" path="res://art/Music/Musica Menu.ogg" id="9_03owx"]
+[ext_resource type="AudioStream" uid="uid://c0lckltub1ioh" path="res://art/Music/Coin_collect.wav" id="10_wkp8b"]
 
 [node name="Main" type="Node" unique_id=1055941305]
 script = ExtResource("1_t4q5g")
@@ -16,9 +18,8 @@ CoinScene = ExtResource("4_lgr22")
 
 [node name="Map" type="Sprite2D" parent="." unique_id=533354946]
 texture_filter = 1
-scale = Vector2(3, 3)
+scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_trn2v")
-centered = false
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1131724171]
 visible = false
@@ -41,18 +42,25 @@ wait_time = 2.0
 one_shot = true
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=321125418]
-position = Vector2(960, 960)
+position = Vector2(580, 634)
 
 [node name="HUD" parent="." unique_id=1185541610 instance=ExtResource("4_f8bkj")]
 
+[node name="CoinTimer" type="Timer" parent="." unique_id=1498366476]
+wait_time = 0.3
+
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=1541769188]
-stream = ExtResource("5_dnvwy")
+stream = ExtResource("7_trn2v")
+parameters/looping = true
 
 [node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=693847821]
 stream = ExtResource("5_r2snl")
 
-[node name="CoinTimer" type="Timer" parent="." unique_id=1498366476]
-wait_time = 0.3
+[node name="MusicaMenu" type="AudioStreamPlayer" parent="." unique_id=888117086]
+stream = ExtResource("9_03owx")
+
+[node name="Moedas" type="AudioStreamPlayer" parent="." unique_id=2097265943]
+stream = ExtResource("10_wkp8b")
 
 [connection signal="Hit" from="Player" to="." method="GameOver"]
 [connection signal="timeout" from="MobTimer" to="." method="OnMobTimerTimeout"]

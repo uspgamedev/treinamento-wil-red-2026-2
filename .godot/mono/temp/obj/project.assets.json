@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedro\\.nuget\\packages\\": {}
+    "C:\\Users\\jotav\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
+      "projectUniqueName": "C:\\Users\\jotav\\Documents\\GitHub\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
       "projectName": "Dodge the Creeps with C#",
-      "projectPath": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
-      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Users\\jotav\\Documents\\GitHub\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
+      "packagesPath": "C:\\Users\\jotav\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jotav\\Documents\\GitHub\\treinamento-wil-red-2026-2\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jotav\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -163,15 +163,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.31, 8.0.31]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.31, 8.0.31]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.31, 8.0.31]"
           }
         ],
         "frameworkReferences": {
@@ -179,7 +179,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

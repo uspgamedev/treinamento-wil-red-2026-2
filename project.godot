@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Dodge the Creeps C#"
+config/name="Ant Survivor"
 config/description="This is a simple game where your character must move
 and avoid the enemies for as long as possible.
 
@@ -20,11 +20,11 @@ consider following the tutorial in the documentation."
 config/tags=PackedStringArray("2d", "demo", "official")
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.7", "C#")
-config/icon="res://icon.webp"
+config/icon="uid://dtdy01j1mfwkx"
 
 [display]
 
-window/size/viewport_width=480
+window/size/viewport_width=720
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 

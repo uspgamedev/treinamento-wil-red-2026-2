@@ -34,3 +34,21 @@ C:\Programas\GODOT\rep\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\ref
 C:\Programas\GODOT\rep\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.pdb
 C:\Programas\GODOT\rep\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.genruntimeconfig.cache
 C:\Programas\GODOT\rep\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\ref\Dodge the Creeps with C#.dll
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\bin\Debug\Dodge the Creeps with C#.deps.json
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\bin\Debug\Dodge the Creeps with C#.runtimeconfig.json
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\bin\Debug\Dodge the Creeps with C#.dll
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\bin\Debug\Dodge the Creeps with C#.pdb
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.csproj.AssemblyReference.cache
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.AssemblyInfoInputs.cache
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.AssemblyInfo.cs
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.csproj.CoreCompileInputs.cache
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.sourcelink.json
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge th.342244DB.Up2Date
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.dll
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\refint\Dodge the Creeps with C#.dll
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.pdb
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\Dodge the Creeps with C#.genruntimeconfig.cache
+C:\Users\jotav\Documents\GitHub\treinamento-wil-red-2026-2\.godot\mono\temp\obj\Debug\ref\Dodge the Creeps with C#.dll

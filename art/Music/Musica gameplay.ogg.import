@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://oi0loky6oad5"
+path="res://.godot/imported/Musica gameplay.ogg-347ab2182fde4d610d8d3a5a074a338a.oggvorbisstr"
+
+[deps]
+
+source_file="res://art/Music/Musica gameplay.ogg"
+dest_files=["res://.godot/imported/Musica gameplay.ogg-347ab2182fde4d610d8d3a5a074a338a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

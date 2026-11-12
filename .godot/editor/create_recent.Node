@@ -1,4 +1,5 @@
 Sprite2D
+AudioStreamPlayer
 Camera2D
 Area2D
 Node2D

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "6Y+44L8y5C4=",
+  "dgSpecHash": "twvdhf19LNw=",
   "success": true,
-  "projectFilePath": "C:\\Programas\\GODOT\\rep\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
+  "projectFilePath": "C:\\Users\\jotav\\Documents\\GitHub\\treinamento-wil-red-2026-2\\Dodge the Creeps with C#.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pedro\\.nuget\\packages\\godot.sourcegenerators\\4.7.2\\godot.sourcegenerators.4.7.2.nupkg.sha512",
-    "C:\\Users\\pedro\\.nuget\\packages\\godotsharp\\4.7.2\\godotsharp.4.7.2.nupkg.sha512",
-    "C:\\Users\\pedro\\.nuget\\packages\\godotsharpeditor\\4.7.2\\godotsharpeditor.4.7.2.nupkg.sha512",
-    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.30\\microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
-    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.30\\microsoft.windowsdesktop.app.ref.8.0.30.nupkg.sha512",
-    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.30\\microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512"
+    "C:\\Users\\jotav\\.nuget\\packages\\godot.sourcegenerators\\4.7.2\\godot.sourcegenerators.4.7.2.nupkg.sha512",
+    "C:\\Users\\jotav\\.nuget\\packages\\godotsharp\\4.7.2\\godotsharp.4.7.2.nupkg.sha512",
+    "C:\\Users\\jotav\\.nuget\\packages\\godotsharpeditor\\4.7.2\\godotsharpeditor.4.7.2.nupkg.sha512",
+    "C:\\Users\\jotav\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\jotav\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\jotav\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.31\\microsoft.aspnetcore.app.ref.8.0.31.nupkg.sha512"
   ],
   "logs": []
 }

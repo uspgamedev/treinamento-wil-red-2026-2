@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://33xap36rea0a"]
 
 [ext_resource type="Script" uid="uid://b65uyln1h4fw6" path="res://Bullet.cs" id="1_n5tpq"]
-[ext_resource type="Texture2D" uid="uid://bpanp07a2tnrx" path="res://Acido.png" id="2_o17h2"]
+[ext_resource type="Texture2D" uid="uid://wucpe4mytkhq" path="res://art/Pojectiles/Acido.png" id="2_o17h2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e5cdo"]
 atlas = ExtResource("2_o17h2")
@@ -46,6 +46,8 @@ script = ExtResource("1_n5tpq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1382427676]
 sprite_frames = SubResource("SpriteFrames_o17h2")
+frame = 2
+frame_progress = 0.42397016
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1962566872]
 
