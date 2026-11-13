@@ -2,9 +2,9 @@ using Godot;
 
 public partial class Mob : RigidBody2D, IDamageable
 {
-	[Export] public int MaxHealth { get; set; } = 1;
+	[Export] public int MaxHealth { get; set; } = 2;
 
-	[Export] public float MinSpeed { get; set; } = 180f;
+	[Export] public float MinSpeed { get; set; } = 150f;
 	[Export] public float MaxSpeed { get; set; } = 260f;
 
 	public Node2D Target { get; set; }
@@ -15,15 +15,24 @@ public partial class Mob : RigidBody2D, IDamageable
 
 	public override void _Ready()
 	{
-		_health = MaxHealth;
-		_speed = (float)GD.RandRange(MinSpeed, MaxSpeed);
-
 		GravityScale = 0;
 		LockRotation = true;
 
 		_animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		string[] mobTypes = _animatedSprite.SpriteFrames.GetAnimationNames();
-		_animatedSprite.Play(mobTypes[GD.Randi() % mobTypes.Length]);
+		var mob = mobTypes[GD.Randi() % mobTypes.Length];
+		_animatedSprite.Play(mob);
+		
+		switch (mob){
+			case "aranha":
+				_health = 1;
+				_speed = MaxSpeed;
+				break;
+			case "joaninha":
+				_health = 2;
+				_speed = MinSpeed;
+				break;
+		}
 	}
 
 	public override void _PhysicsProcess(double delta)
