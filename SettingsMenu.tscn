@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://dku3u70qo42re"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_tb4hl"]
+script/source = "using Godot;
+using System;
+
+public partial class SettingsMenu : Control
+{
+	private HSlider _volumeSlider;
+	private CheckButton _fullscreenToggle;
+	private Button _backButton;
+	private int _masterBusIndex;
+
+	public override void _Ready()
+	{
+		// Obtém as referências dos nós da cena
+		_volumeSlider = GetNode<HSlider>(\"VBoxContainer/VolumeSlider\");
+		_fullscreenToggle = GetNode<CheckButton>(\"VBoxContainer/FullscreenCheckButton\");
+		_backButton = GetNode<Button>(\"VBoxContainer/BackButton\");
+
+		// Configura o índice do canal de áudio principal
+		_masterBusIndex = AudioServer.GetBusIndex(\"Master\");
+
+		// Sincroniza os controles visuais com o estado atual do jogo
+		_fullscreenToggle.ButtonPressed = DisplayServer.WindowGetMode() == DisplayServer.WindowMode.Fullscreen;
+		_volumeSlider.Value = Mathf.DbToLinear(AudioServer.GetBusVolumeDb(_masterBusIndex));
+
+		// Conecta os eventos (Signals) via código usando expressões lambda
+		_volumeSlider.ValueChanged += OnVolumeSliderValueChanged;
+		_fullscreenToggle.Toggled += OnFullscreenCheckButtonToggled;
+		_backButton.Pressed += OnBackButtonPressed;
+	}
+
+	private void OnVolumeSliderValueChanged(double value)
+	{
+		float linearValue = (float)value;
+		AudioServer.SetBusVolumeDb(_masterBusIndex, Mathf.LinearToDb(linearValue));
+	}
+
+	private void OnFullscreenCheckButtonToggled(bool toggledOn)
+	{
+		if (toggledOn)
+		{
+			DisplayServer.WindowSetMode(DisplayServer.WindowMode.Fullscreen);
+		}
+		else
+		{
+			DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
+		}
+	}
+
+	private void OnBackButtonPressed()
+	{
+		Hide(); // Oculta o menu (ou use GetTree().ChangeSceneToFile(...) se for outra cena)
+	}
+}
+"
+
+[node name="SettingsMenu" type="Control" unique_id=985626323]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = SubResource("CSharpScript_tb4hl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=171484349]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 56.0
+
+[node name="VolumeSlider" type="HSlider" parent="VBoxContainer" unique_id=510783342]
+layout_mode = 2
+
+[node name="FullscreenCheckButton" type="CheckButton" parent="VBoxContainer" unique_id=1499019141]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="VBoxContainer" unique_id=1998807119]
+layout_mode = 2

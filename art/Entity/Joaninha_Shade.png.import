@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyg1vhy5f4ogh"
-path="res://.godot/imported/ant_animation.png-ff18ee1b44ab1ddb539c8af084e81156.ctex"
+uid="uid://btl54a3brqsu7"
+path="res://.godot/imported/Joaninha_Shade.png-478eed5fb7597160a0889fe65ab9134c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Entity/ant_animation.png"
-dest_files=["res://.godot/imported/ant_animation.png-ff18ee1b44ab1ddb539c8af084e81156.ctex"]
+source_file="res://art/Entity/Joaninha_Shade.png"
+dest_files=["res://.godot/imported/Joaninha_Shade.png-478eed5fb7597160a0889fe65ab9134c.ctex"]
 
 [params]
 

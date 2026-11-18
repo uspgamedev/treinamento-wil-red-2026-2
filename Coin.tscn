@@ -109,7 +109,7 @@ script = ExtResource("1_ou7jl")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1625213470]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_n4buf")
-autoplay = "default"
+animation = &"mascavo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1801308795]
 scale = Vector2(1.5, 1.5)

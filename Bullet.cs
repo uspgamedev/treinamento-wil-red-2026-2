@@ -13,7 +13,7 @@ public partial class Bullet : Area2D
 
 	public override void _Ready()
 	{
-		Rotation = Direction.Angle();
+		Rotation = Direction.Angle() + Mathf.DegToRad(90);
 
 		BodyEntered += OnBodyEntered;
 		GetNode<VisibleOnScreenNotifier2D>("VisibleOnScreenNotifier2D").ScreenExited += OnScreenExited;

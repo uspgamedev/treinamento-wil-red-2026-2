@@ -83,8 +83,7 @@ public partial class Player : Area2D
 		*/
 		
 		if (velocity.Y != 0 || velocity.X != 0) {
-			animatedSprite.Rotation = Mathf.Atan2(velocity.Y, velocity.X);
-			animatedSprite.FlipH = true;
+			animatedSprite.Rotation = Mathf.Atan2(velocity.Y, velocity.X) + Mathf.DegToRad(90);
 		}
 	}
 

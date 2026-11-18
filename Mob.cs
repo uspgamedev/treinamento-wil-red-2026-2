@@ -45,7 +45,7 @@ public partial class Mob : RigidBody2D, IDamageable
 
 		Vector2 direction = GlobalPosition.DirectionTo(Target.GlobalPosition);
 		LinearVelocity = direction * _speed;
-		_animatedSprite.Rotation = direction.Angle();
+		_animatedSprite.Rotation = direction.Angle() + Mathf.DegToRad(90);
 	}
 
 	public void TakeDamage(int amount)

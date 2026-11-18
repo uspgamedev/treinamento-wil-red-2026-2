@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bl8safxyb4agb"]
+
+[node name="Menu" type="Control" unique_id=1651054356]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=327768634]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+scale = Vector2(1660.6967, 40.934254)
+offset_transform_enabled = true
+color = Color(1, 1, 1, 0.4117647)
+
+[node name="Menu" type="VBoxContainer" parent="." unique_id=1850680888]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.5
+offset_top = -52.0
+offset_right = 55.5
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 68
+
+[node name="Nome" type="Label" parent="Menu" unique_id=48292093]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "Ant Survivor"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Opções" type="VBoxContainer" parent="Menu" unique_id=221805046]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 13
+
+[node name="Iniciar" type="Button" parent="Menu/Opções" unique_id=181902141]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+text = "Iniciar"
+
+[node name="Configurações" type="Button" parent="Menu/Opções" unique_id=1066797808]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+text = "Configurações"
+
+[node name="Sair" type="Button" parent="Menu/Opções" unique_id=1820846453]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+text = "Sair
+"
+
+[node name="MadeBy" type="HBoxContainer" parent="." unique_id=261873143]
+layout_mode = 1
+offset_right = 176.0
+offset_bottom = 49.0
+
+[node name="Nome" type="Label" parent="MadeBy" unique_id=1896066478]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 8
+text = "Feito por José Lessa
+                 Pedro Groner"

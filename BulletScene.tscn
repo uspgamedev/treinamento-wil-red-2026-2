@@ -1,23 +1,23 @@
 [gd_scene format=3 uid="uid://33xap36rea0a"]
 
 [ext_resource type="Script" uid="uid://b65uyln1h4fw6" path="res://Bullet.cs" id="1_n5tpq"]
-[ext_resource type="Texture2D" uid="uid://wucpe4mytkhq" path="res://art/Pojectiles/Acido.png" id="2_o17h2"]
+[ext_resource type="Texture2D" uid="uid://cdj8qtpcs0ylu" path="res://art/Pojectiles/Acido_new.png" id="2_o17h2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e5cdo"]
 atlas = ExtResource("2_o17h2")
-region = Rect2(0, 0, 32, 32)
+region = Rect2(0, 0, 50, 50)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fopxu"]
 atlas = ExtResource("2_o17h2")
-region = Rect2(32, 0, 32, 32)
+region = Rect2(50, 0, 50, 50)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g3j4r"]
 atlas = ExtResource("2_o17h2")
-region = Rect2(0, 32, 32, 32)
+region = Rect2(0, 50, 50, 50)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fo88y"]
 atlas = ExtResource("2_o17h2")
-region = Rect2(32, 32, 32, 32)
+region = Rect2(50, 50, 50, 50)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o17h2"]
 animations = [{
@@ -45,9 +45,10 @@ animations = [{
 script = ExtResource("1_n5tpq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1382427676]
+position = Vector2(0, 7)
 sprite_frames = SubResource("SpriteFrames_o17h2")
-frame = 2
-frame_progress = 0.42397016
+frame = 3
+frame_progress = 0.7096311
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1962566872]
 

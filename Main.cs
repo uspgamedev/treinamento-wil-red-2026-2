@@ -18,6 +18,8 @@ public partial class Main : Node
 
 	private int _score;
 	private Rect2 _playArea;
+	private int base50 = 50;
+	private int _highscore;
 
 	public override void _Ready()
 	{
@@ -82,12 +84,13 @@ public partial class Main : Node
 		AddChild(coin);
 	}
 
-	private void OnCoinCollected()
+	private void OnCoinCollected(int points)
 	{
-		_score++;
+		_score+=points;
 		GetNode<HUD>("HUD").UpdateScore(_score);
-		if ((_score%50)==0) {
+		if (_score>=base50) {
 			GetNode<AudioStreamPlayer>("Moedas").Play();
+			base50+=50;
 		}
 	}
 
